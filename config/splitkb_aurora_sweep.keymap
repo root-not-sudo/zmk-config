@@ -10,8 +10,8 @@
 
 
 &mt {
-  //  flavor = "tap-preferred";
-   // tapping_term_ms = <150>;
+  flavor = "tap-preferred";
+  tapping_term_ms = <150>;
 };
 
 / {
