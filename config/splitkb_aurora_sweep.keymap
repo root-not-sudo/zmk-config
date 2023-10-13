@@ -75,8 +75,8 @@
         bindings = <
         &kp PSCRN  &kp LC(F)    &kp LC(Z)  &kp LC(Y)  &kp UNDER            &kp TILDE  &kp LBKT  &kp RBKT  &kp AMPS  &kp AT
         &kp LC(A)  &kp LC(X)    &kp LC(C)  &kp LC(V)  &kp CARET            &kp BSLH   &kp LPAR  &kp RPAR  &kp EXCL  &kp QMARK
-        &kp CAPS   &kp KP_NUM   &kp SLCK   &kp INS    &kp LC(LA(DEL)       &kp DLLR   &kp LBRC  &kp RBRC  &kp PIPE  &kp HASH
-                                          &kp ESC  &trans                 &trans &kp DEL
+        &kp CAPS   &kp KP_NUM   &kp SLCK   &kp INS    &kp LC(LA(DEL))       &kp DLLR   &kp LBRC  &kp RBRC  &kp PIPE  &kp HASH
+                                          &kp ESC  &trans                 &trans  &kp DEL
         >;
         };
 
