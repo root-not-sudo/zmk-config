@@ -62,7 +62,7 @@
         keymap {
                 compatible = "zmk,keymap";
 
-            default_layer {
+            default {
         bindings = <
         &kp SQT   &kp COMMA  &kp PERIOD  &kp P  &kp Y                       &kp F  &kp G  &kp C     &kp R    &kp L
         &kp A     &kp O      &kp E       &kp U  &kp I                       &kp D  &kp H  &kp T     &kp N    &kp S
@@ -71,7 +71,7 @@
         >;
         };
 
-            left_layer {
+            util_sym {
         bindings = <
         &kp PSCRN  &kp LC(F)    &kp LC(Z)  &kp LC(Y)  &kp UNDER            &kp TILDE  &kp LBKT  &kp RBKT  &kp AMPS  &kp AT
         &kp LC(A)  &kp LC(X)    &kp LC(C)  &kp LC(V)  &kp CARET            &kp BSLH   &kp LPAR  &kp RPAR  &kp EXCL  &kp QMARK
@@ -80,21 +80,21 @@
         >;
         };
 
-        right_layer {
+            num_nav {
         bindings = <
-        &kp BANG  &kp ATSN &kp HASH  &kp DLLR  &kp PRCT             &kp CRRT  &kp AMPS &kp KMLT &kp LPRN &kp RPRN
-        &kp HASH  &kp QMARK  &kp FSLH  &kp COLN  &kp SCLN           &kp MINUS &kp KP_EQUAL  &kp LBRC  &kp RBRC   &kp BKSP
-        &kp LSFT  &kp KPLS &kp LBKT &kp RBKT   &kp BSLH             &kp UNDER &kp LEFT &kp DOWN &kp UP  &kp RIGHT
-                      &mo 3 &kp LCTL                &kp SPC  &mo 2
+        &kp KP_MINUS  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_DIVIDE         &kp GRAVE   &kp HOME  &kp UP        &kp END    &kp PG_UP
+        &kp KP_PLUS   &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_MULTIPLY       &kp PRCNT   &kp LEFT  &kp DOWN      &kp RIGHT  &kp PG_DN
+        &kp KP_N0     &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp EQUAL             &kp LG(TAB) &kp F11   &kp LA(LEFT)  &kp F5     &kp LA(RIGHT)
+                                           &kp ESC  &trans                  &trans &kp DEL
         >;
         };
 
-        tri_layer {
+            set_f {
         bindings = <
-        &kp NUM_1  &kp NUM_2    &kp NUM_3    &kp NUM_4    &kp NUM_5             &trans &trans   &trans   &trans  &trans
-        &kp F1 &kp F2 &kp F3 &kp F4 &kp F5                          &trans &kp PG_UP  &kp K_VOL_UP &kp K_MUTE &trans
-        &bt BT_CLR  &bt BT_NXT &bt BT_PRV &kp F6 &kp F7                 &trans &kp PG_DN  &kp K_VOL_DN  &trans &trans
-                     &trans &trans                      &trans &trans
+        &sys_reset           &kp N7  &kp N8  &kp N9  &kp C_PWR             &kp C_VOL_UP &kp F2  &kp F3   &kp F4   &sys_reset
+        &mt LALT PAUSE_BREAK &kp N4  &kp N5  &kp N6  &kp LA(F4)            &kp C_VOL_DN &kp F5  &kp F6   &kp F7   &kp F8
+        &kp N0               &kp N1  &kp N2  &kp N3  &kp F1                &kp C_MUTE &kp F9    &kp F10  &kp F11  &kp F12
+                                            &tog 1  &trans                 &tog 2  &trans
         >;
         };
 
