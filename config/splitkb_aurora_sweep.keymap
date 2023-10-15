@@ -62,7 +62,14 @@
         keymap {
                 compatible = "zmk,keymap";
 
-            default {
+            base {
+            // -----------------------------------------------------------------------------------------
+            // |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |
+            // |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |
+            // |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |
+            //                   | LWR | SPC |   | ENT | RSE  |
+
+            label = "base";
         bindings = <
         &kp SQT   &kp COMMA  &kp PERIOD  &kp P  &kp Y                       &kp F  &kp G  &kp C     &kp R    &kp L
         &kp A     &kp O      &kp E       &kp U  &kp I                       &kp D  &kp H  &kp T     &kp N    &kp S
@@ -72,6 +79,7 @@
         };
 
             util_sym {
+            label = "util_sym";
         bindings = <
         &kp PSCRN  &kp LC(F)    &kp LC(Z)  &kp LC(Y)  &kp UNDER            &kp TILDE  &kp LBKT  &kp RBKT  &kp AMPS  &kp AT
         &kp LC(A)  &kp LC(X)    &kp LC(C)  &kp LC(V)  &kp CARET            &kp BSLH   &kp LPAR  &kp RPAR  &kp EXCL  &kp QMARK
@@ -81,6 +89,7 @@
         };
 
             num_nav {
+            label = "num_nav";
         bindings = <
         &kp KP_MINUS  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_DIVIDE         &kp GRAVE   &kp HOME  &kp UP        &kp END    &kp PG_UP
         &kp KP_PLUS   &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_MULTIPLY       &kp PRCNT   &kp LEFT  &kp DOWN      &kp RIGHT  &kp PG_DN
@@ -90,6 +99,7 @@
         };
 
             set_f {
+            label = "set_f";
         bindings = <
         &sys_reset           &kp N7  &kp N8  &kp N9  &kp C_PWR             &kp C_VOL_UP &kp F2      &kp F3      &kp F4        &sys_reset
         &mt LALT PAUSE_BREAK &kp N4  &kp N5  &kp N6  &kp LA(F4)            &kp C_VOL_DN &kp F5      &kp F6      &kp F7        &kp F8
