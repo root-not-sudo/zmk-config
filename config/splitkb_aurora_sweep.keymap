@@ -73,7 +73,7 @@
         bindings = <
         &kp SQT   &kp COMMA  &kp PERIOD  &kp P  &kp Y                       &kp F  &kp G  &kp C     &kp R    &kp L
         &kp A     &kp O      &kp E       &kp U  &kp I                       &kp D  &kp H  &kp T     &kp N    &kp S
-        &kp SEMI  &kp Q      &kp J       &kp K  &mt LALT X                  &kp N  &kp M  &kp CMMA  &kp DOT  &mt LSFT RET
+        &kp SEMI  &kp Q      &kp J       &kp K  &mt LALT X                  &kp B  &kp M  &kp CMMA  &kp DOT  &mt LSFT RET
                             &mt LSHFT TAB  &lt 1 SPACE                     &lt 2 RET  &mt LCTRL BSPC
         >;
         };
