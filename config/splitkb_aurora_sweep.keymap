@@ -66,6 +66,18 @@
         };
 
 
+       combo_util_sym_tog {
+            timeout-ms = <50>;
+            key-positions = <30 31>;
+            bindings = <&tog 1>;
+        };
+
+
+       combo_util_sym_tog {
+            timeout-ms = <50>;
+            key-positions = <32 33>;
+            bindings = <&tog 2>;
+        };
 
     };
 
