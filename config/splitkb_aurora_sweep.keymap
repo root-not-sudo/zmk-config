@@ -2,6 +2,8 @@
  * Copyright (c) 2022 The ZMK Contributors
  *
  * SPDX-License-Identifier: MIT
+ *
+ * Brent notes: double tap the reset button to put it in the mode to load firmware
  */
 
 #include <behaviors.dtsi>
